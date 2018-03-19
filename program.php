@@ -23,7 +23,7 @@ if (isset($_POST['state'])) {
 	ob_flush();
 	flush();
 	sleep(1);
-	$array = explode("\n", file_get_contents('processingControl/positions.txt'));
+	$array = explode("\n", file_get_contents('C:\wamp64\www\petfeeder\processingControl/positions.txt'));
 	$str=$array[0]+'';
 	echo '<p style="font-family:'.$font.';font-size: 80px;color: #ccc;">'.$str.'%</p>';
 }
